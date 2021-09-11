@@ -175,8 +175,91 @@ th:first-child{
     color:white;
     width:125px;
     height:50px;
+    
 }
 td:first-child{
     background-color: #BDE1FF;
     font-weight:bold;
+    
 }
+/*Contact*/
+form{
+    margin-top: 15px;
+    
+}
+legend{
+    text-transform: uppercase;
+    color: #4977D1;
+    font-weight: bold;
+}
+fieldset{
+    border:2px solid #9ed034;
+}
+label{
+    font-weight: bold;
+    font-size: 15px;
+    margin-left:25px;
+}
+.textbox label{
+    display:block;
+    margin-top: 10px;
+}
+.radios{
+    margin-top: 15px;
+}
+.radios label {
+    display: inline;
+}
+.selectmenu{
+    margin-top: 15px;
+}
+
+.selectmenu label{
+    display:inline;
+}
+input{
+    margin-left: 25px; 
+}
+
+.textbox input{
+    width:390px;
+}
+.commentbox label{
+    display: block;
+    margin-top: 15px;
+}
+textarea{
+    width:400px;
+    height: 180px;
+    margin-left: 25px;
+    
+}
+
+input[type="submit"]{
+    width:120px;
+    height:40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 310px;
+    background-color: #4977D1;
+    color:white;
+    font-weight: bold;
+    font-size: medium;
+}
+
+select{
+    width:150px;
+    text-align-last: center;
+}
+
+#contact main h1{
+    color: #9ed034;
+}
+#contact main p{
+    margin:30px auto 30px auto;
+    
+}
+.email{
+    margin-top: 10px;
+}
+
