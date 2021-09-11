@@ -17,6 +17,10 @@
     background:no-repeat lightgray url(images/cliff_rock.jpeg);
     background-size: 1500px;
 }
+#cliffs header{
+    background: no-repeat lightgray url(images/forest_cliff.jpeg);
+    background-size: 1500px;
+}
 .main-header{
     background-color: rgb(255,255,255,0.8);
     width:700px;
@@ -262,4 +266,4 @@ select{
 .email{
     margin-top: 10px;
 }
-
+/*cliffs*/
