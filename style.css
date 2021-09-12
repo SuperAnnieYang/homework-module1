@@ -187,6 +187,13 @@ td:first-child{
     
 }
 /*Contact*/
+
+
+.contactinfo span:first-child{
+    font-weight: bold;
+}
+
+
 form{
     margin-top: 15px;
     
@@ -266,4 +273,48 @@ select{
 .email{
     margin-top: 10px;
 }
-/*cliffs*/
+/*cliffs
+
+.cliffsinfo .cliff p{
+    background-color:#852b1b;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+    height: 28px;
+    padding-top: 10px;
+}
+
+.cliffsinfo .cliff p{
+    position:absolute;
+}
+.cliffsinfo .cliff img{
+    position:relative;
+    top:54px;
+}
+*/
+#cliffs main .cliffsinfo {
+    
+    width: 90%;
+    margin: 0 auto;
+}
+#cliffs main .cliffsinfo .cliff {
+    width: 45%;
+    display: inline-block;
+    margin: 2.5em 1.2em 0 1.2em;
+}
+#cliffs main .cliffsinfo .cliff p {
+    background: #852B1B;
+    height: 2em;
+    color: #fff;
+    text-align: center;
+    padding-top: 0.55em;
+    margin: 0;
+}
+#cliffs main .cliffsinfo .cliff img{
+    width: 100%;
+    height: auto;
+}
+
+
+
