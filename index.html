@@ -33,6 +33,10 @@
         </nav>
     </div>
 </header>
+<section id="timeofday">
+    <span>Your current Local Time: </span>
+    <span id="clock"></span>
+</section>
 <main>
 <h2>Introducing California's Greatest Cliffs</h2>
 <h3>What is so unique about California cliffs?</h3>
@@ -80,11 +84,34 @@
     </div>
 </footer>
 
-
-
 </div>
 
+<!--Javascript Codes-->
+<script>
+
+function currenttime(){
+    //declare variables
+    var d = new Date();//get current date
+    var hr = d.getHours();//Get current hours
+    var min = d.getMinutes();//get current mins
+    var sec = d.getSeconds();//get current seconds
+    var ampm; //declare empty variable to store AM or PM
+}
+//add 0 to sigle digits for seconds
+if (sec<10){
+    sec = "0" + sec;
+}
+if (min<10){
+    min = "0" + min;
+}
 
 
+
+
+
+
+
+
+</script>
 </body>
 </html>
