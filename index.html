@@ -96,7 +96,7 @@ function currenttime(){
     var min = d.getMinutes();//get current mins
     var sec = d.getSeconds();//get current seconds
     var ampm; //declare empty variable to store AM or PM
-}
+
 //add 0 to sigle digits for seconds
 if (sec<10){
     sec = "0" + sec;
@@ -104,7 +104,18 @@ if (sec<10){
 if (min<10){
     min = "0" + min;
 }
-
+if (hr==12){
+    ampm ="pm"
+} else if(hr>12){
+    hr-=12;
+    ampm = "pm";
+} else {
+    ampm = "am";
+}
+var time = hr + ":" + min + ":" +sec + " " + ampm;
+document.getEloementById("clock").innerText = time;
+}
+currenttime();
 
 
 
