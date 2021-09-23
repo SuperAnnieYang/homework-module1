@@ -252,10 +252,11 @@ input[type="submit"]{
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 310px;
-    background-color: #4977D1;
+    /*background-color: #4977D1;*/
     color:white;
     font-weight: bold;
     font-size: medium;
+    border:none;
 }
 
 select{

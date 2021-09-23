@@ -13,3 +13,11 @@ function generateCode(){
 }
 //Get HTML element to display
 document.getElementById("codes").innerHTML = generateCode();
+
+//disable button
+function disableButton(){
+    document.getElementById("submit").disabled = true;
+}
+
+//active function
+disableButton();
