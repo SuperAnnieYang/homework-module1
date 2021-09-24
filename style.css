@@ -242,20 +242,33 @@ input{
 textarea{
     width:400px;
     height: 180px;
-    margin-left: 25px;
-    
+    margin-left: 25px;    
+}
+.randomcode{
+    margin-top: 20px;
+    margin-left: 140px;
+    margin-bottom: 20px;
+}
+.randomcode input{
+    height: 25px;
+}
+.randomcode p{
+    display: inline;
+    padding:15px;
+    background-color: #3a3a3a3f;
+    font-weight: bold;
 }
 
 input[type="submit"]{
-    width:120px;
-    height:40px;
+    width:8em;
+    height:2.5em;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-left: 310px;
+    margin-left: 280px;
     /*background-color: #4977D1;*/
     color:white;
     font-weight: bold;
-    font-size: medium;
+    font-size: 1.2em;
     border:none;
 }
 
