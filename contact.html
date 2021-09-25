@@ -11,7 +11,7 @@
 
 
 
-<body id="contact">
+<body id="contact" onload="disableButton(true)">
     
 <div id="container">
 <header>
@@ -84,7 +84,7 @@
         </div>
         <!--Random Codes-->
         <div class="randomcode">
-            <input type="text" name="randomcode" placeholder="Enter characters">
+            <input type="text" name="randomcode" placeholder="Enter characters" id = "codeentered">
             <p id="codes"></p>
         </div>
     
@@ -139,8 +139,9 @@
 <!--PARTNERS-->
 <script src="js/site_scripts.js"></script>
 
-<!--Random-->
+<!--Randomcodes-->
 <script src="js/randomcodes.js"></script>
+
 
 
 </body>
