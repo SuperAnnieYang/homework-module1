@@ -186,8 +186,13 @@ td:first-child{
     font-weight:bold;
     
 }
-/*jQuery table*/
-
+/*-----jQuery table-----*/
+.afterclick{
+    background-color:#9ed034;
+    color: white;
+    cursor: pointer;
+    font-weight:bold;
+}
 /*Contact*/
 
 
