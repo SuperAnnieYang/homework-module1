@@ -30,7 +30,16 @@ $(document).ready(function(){
             }
         }
     });
-    
+
+
+    // display the cliff site names
+    $("td.clickit").click(function () {
+        var colIndex = $(this).parent().children().index($(this));
+        var colName = $(".head").children(':eq(' + colIndex + ')').text();
+
+        $("p").append(' at ' + colName);
+
+    });
   });
 
   
