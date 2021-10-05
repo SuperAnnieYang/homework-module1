@@ -12,14 +12,16 @@ $(document).ready(function(){
 
     $("td").click(function () {
         var content = $(this).text();
+        var colIndex = $(this).index();
+        var colName = $("th:eq("+colIndex+")").text();
 
         if (content != "Not Available") {
-            $("tr.clickit").toggleClass("afterclick");
+            $().toggleClass("afterclick");
             
             if ($(this).hasClass("afterclick")) {
                 $('#displaySelected').css("visibility" ,"visible");
                 $('#displaySelected').css("margin-top", "2em");
-                $('#result').append("<p>" + content + "</p>");
+                $('#result').append("<p>" + content + " " + colName + "</p>");
             } else {
                $('#result p:contains('+content+')').remove();
 
@@ -33,13 +35,13 @@ $(document).ready(function(){
 
 
     // display the cliff site names
-    $("td.clickit").click(function () {
-        var colIndex = $(this).parent().children().index($(this));
-        var colName = $(".head").children(':eq(' + colIndex + ')').text();
-
+    /*$("td.clickit").click(function () {
+        
+        
         $("p").append(' at ' + colName);
 
-    });
+    });*/
+   
   });
 
   
