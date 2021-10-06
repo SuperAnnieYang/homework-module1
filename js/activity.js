@@ -1,14 +1,13 @@
 $(document).ready(function(){
   
-    $("tr td.clickit").css("cursor","pointer");
-    $("tr td.clickit").click(function(){
-      $(this).toggleClass("afterclick");
-    }) 
-
-
+    // $("tr td.clickit").css("cursor","pointer");
+    // $("tr td.clickit").click(function(){
+    // //   $(this).toggleClass("afterclick");
+    // }) 
 
 
     //User interaction with table cells
+    $("tr td.clickit").css("cursor","pointer");
 
     $("td").click(function () {
         var content = $(this).text();
@@ -16,7 +15,7 @@ $(document).ready(function(){
         var colName = $("th:eq("+colIndex+")").text();
 
         if (content != "Not Available") {
-            $().toggleClass("afterclick");
+            $(this).toggleClass("afterclick");
             
             if ($(this).hasClass("afterclick")) {
                 $('#displaySelected').css("visibility" ,"visible");
@@ -43,5 +42,3 @@ $(document).ready(function(){
     });*/
    
   });
-
-  
