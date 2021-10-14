@@ -1,7 +1,7 @@
 var attr = ["partner bus tour","partner cabin rental","partner camping adventure","partner college tours","part bike rental","partner tour group"];
 var fileNames = [];
 var photos = [];
-var openList = "<li class='partner'>"; 
+var openList = "<li class='partner col-lg-2 col-md-4 col-sm-6 col-xs-12'>"; 
 var closeList = "</li>";
 var image;
 var imageList = [];

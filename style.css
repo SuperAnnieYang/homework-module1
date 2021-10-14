@@ -1,28 +1,28 @@
  /*header*/
  header{
     width: 100%;
-    min-height: 400px;
+    min-height: 220px;
     padding-top: 3em;
 }
-#home header{
-    background:no-repeat lightgrey url(images/cliff_ocean.jpg);
-    background-size: 1500px;
+#home{
+    background:no-repeat white url(images/cliff_ocean.jpg);
+    background-size: 100% 400px;
 
 }
-#activities header{
-    background:no-repeat lightgray url(images/runfly.jpeg);
-    background-size: 1500px;
+#activities {
+    background:no-repeat white url(images/runfly.jpeg);
+    background-size: 100% 400px;
 }
-#contact header{
-    background:no-repeat lightgray url(images/cliff_rock.jpeg);
-    background-size: 1500px;
+#contact{
+    background:no-repeat white url(images/cliff_rock.jpeg);
+    background-size: 100% 400px;
 }
-#cliffs header{
-    background: no-repeat lightgray url(images/forest_cliff.jpeg);
-    background-size: 1500px;
+#cliffs{
+    background: no-repeat white url(images/forest_cliff.jpeg);
+    background-size: 100% 400px;
 }
 .main-header{
-    background-color: rgb(255,255,255,0.8);
+    background-color: rgb(38,41,61,0.7);
     width:700px;
     margin:2em auto 0 auto;
     min-height:100px;
@@ -52,7 +52,7 @@
 }
 .main-menu ul li a{
     text-decoration: none;
-    color:#888;
+    color:rgba(255, 255,255);
 }
 .main-menu ul li a:hover{
     color:#9ed034;
@@ -74,6 +74,7 @@ main h2{
     color:#9ed034;
     padding-bottom: 25px;
     font-size:xx-large;
+    text-align: center;
 }
 main h3{
     font-size: 22px;
@@ -84,7 +85,7 @@ section{
     background-color: #4288c3;;
 }
 section #partners{
-    width: 1200px;
+    width: 100%;
     padding:2em 0 2em 0;
     margin: 0 auto;
     text-align: center;
@@ -95,6 +96,7 @@ section #partners .partner{
     padding:1.3em 1.5em;
     background-color: #fff;
     border-radius: 50%;
+    width:auto;
 }
 section #partners .partner img{
     width:90px;
@@ -148,6 +150,25 @@ footer #nondisclaimer .social .fa-instagram{
     background: #125688;
     color:white
 }
+
+/*Home*/
+#home .homebox{
+    margin:0 auto;
+    width: 90%;
+    height:auto;
+    display: grid;
+    grid-column-gap:20px;
+    grid-template-columns: repeat(2,1fr);    
+}
+#home .homebox .boxes{
+    border: 1px solid #888;
+    width:100%;
+    padding:40px 20px;
+}
+#home .homebox .boxes h3{
+    text-align: center;
+}
+
 /*Activities*/
 table{
     width:1000px;
@@ -231,10 +252,13 @@ form{
     margin-top: 15px;
     
 }
-legend{
+#formcontact{
     text-transform: uppercase;
     color: #4977D1;
     font-weight: bold;
+    padding-left: 29px;
+    margin-top: 20px;
+
 }
 fieldset{
     border:2px solid #9ed034;
@@ -279,7 +303,7 @@ textarea{
 }
 .randomcode{
     margin-top: 20px;
-    margin-left: 140px;
+    margin-left: 110px;
     margin-bottom: 20px;
 }
 .randomcode input{
@@ -292,17 +316,15 @@ textarea{
     font-weight: bold;
 }
 
-input[type="submit"]{
-    width:8em;
-    height:2.5em;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 280px;
-    /*background-color: #4977D1;*/
-    color:white;
-    font-weight: bold;
-    font-size: 1.2em;
-    border:none;
+
+.sendbutton button{
+    height: 35px;
+    width: 120px;
+    margin-left: 310px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: none;
+
 }
 
 select{
@@ -372,8 +394,55 @@ select{
     background: rgba(251,215,139);
     background:linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
     height:40px;
-    padding-top:20px;
+    padding-top:10px;
+    margin-top: 20px;
+
 }
 #home section#timeofday span#clock{
     color:#125688
 }
+
+@media (max-width: 768px) {
+    footer #nondisclaimer .copy {
+        padding: 3.5em 0em 3.5em 0em;
+        text-align: center;
+        float: none;
+        font-size: 0.9em;
+      }
+      footer #nondisclaimer .social {
+        padding: 2.5em 0;
+        margin: 0;
+        text-align: center;
+        float: none;
+      }
+}
+/*
+@media (max-width: 992px) {
+    .logo img {
+        position: relative;
+        bottom: 8px;
+        
+    }
+    .main-menu {
+        width: 200px;
+        position: absolute;
+        right: 1.7em;
+        margin-top:25px;
+    
+      }
+      .main-menu ul li {
+        border-bottom: 1px solid rgba(202, 204, 202, 0.6);
+        background-color: rgb(38,41,61,0.7);
+      }
+      main {
+        padding: 3em 1em 3em 1em;
+        margin: 0;
+      }
+      #home .main-col-content {
+        padding: 25px;
+        min-height: 450px;
+        margin-top: 1em;
+      }
+      
+} 
+*/
