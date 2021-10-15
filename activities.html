@@ -16,28 +16,43 @@
 
 <body id="activities">
     
-<div id="container">
-<div class="main-header sticky-top">
-        <div class="logo">
-            <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+    <div id="container-fluid">
+        <div class="main-header sticky-top">
+            
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#"></a>
+                <div class="logo">
+                    <img src="images/logo.png" alt="Great Cliffs Logo" width="125">
+                </div>
+            </a>
+                <!-- Hamburger Menu -->
+                <!-- Values for data-target and aria-controls must match id of div with the collapse class -->
+                <button class = "navbar-toggler navbar-toggler-right" type = "button" data-toggle = "collapse" 
+                   data-target = "#navbarNavDropdown" aria-controls = "navbarNavDropdown" 
+                   aria-expanded = "false" aria-label = "Toggle navigation">
+                   
+                   <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
+                <div class="main-menu">
+                    <ul class="navbar-nav">
+                    <li class="nav-item"><a class = "nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class = "nav-link text-white" href="cliffs.html">Cliffs</a></li>
+                    <li class="nav-item active"><a class = "nav-link text-white" href="activities.html">Activities</a></li>
+                    <li class="nav-item"><a class = "nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+                </div>
+            </nav>
         </div>
-        <nav class="main-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cliffs.html">Cliffs</a></li>
-                <li class="active"><a href="activities.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-
-        </nav>
-    </div>
 
 <header>
     
     
 </header>
 <main>
-<h2>Activities</h2>
+<h1>Activities</h1>
 <p>There are many planned activities at all the cliff sites. Some are scheduled daily, weekly, monthly and yearly. These activities are not however run by the state park and recreational department. They are operated and manage by private vendors but are partners with the state department. Therefore, for schedule inquiries or information, please contact them directly. For a list of activities, please refer to the table below:</p>
 <table>
     <caption>Activities at the Cliffs</caption>
@@ -150,6 +165,11 @@
 <script src="js/site_scripts.js"></script>
 <!--TABLE-->
 <script src="js/activity.js"></script>
+
+<script src="js/site_scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 </body>
