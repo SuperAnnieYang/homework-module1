@@ -20,7 +20,7 @@ $(document).ready(function(){
             if ($(this).hasClass("afterclick")) {
                 $('#displaySelected').css("visibility" ,"visible");
                 $('#displaySelected').css("margin-top", "2em");
-                $('#result').append("<p>" + content + " " + colName + "</p>");
+                $('#result').append("<p>" + content + " at " + colName + "</p>");
             } else {
                $('#result p:contains('+content+')').remove();
 
@@ -31,14 +31,5 @@ $(document).ready(function(){
             }
         }
     });
-
-
-    // display the cliff site names
-    /*$("td.clickit").click(function () {
-        
-        
-        $("p").append(' at ' + colName);
-
-    });*/
    
   });

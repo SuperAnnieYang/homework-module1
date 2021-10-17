@@ -1,25 +1,42 @@
  /*header*/
  header{
     width: 100%;
-    min-height: 240px;
+    min-height: 245px;
     padding-top: 3em;
 }
 #home{
     background:no-repeat white url(images/cliff_ocean.jpg);
-    background-size: 100% 400px;
-
+    background-size: 100% 600px;
+}
+#home > img{
+    width:100%;
+    height: auto;
 }
 #activities {
     background:no-repeat white url(images/runfly.jpeg);
-    background-size: 100% 400px;
+    background-size: 100% 600px;
+}
+#activities > img {
+        width:100%;
+        height: auto;
 }
 #contact{
     background:no-repeat white url(images/cliff_rock.jpeg);
-    background-size: 100% 400px;
+    background-size: 100% 600px;
 }
+#contact > img {
+    width:100%;
+    height: auto;
+}
+
 #cliffs{
     background: no-repeat white url(images/forest_cliff.jpeg);
-    background-size: 100% 400px;
+    background-size: 100% 600px;
+}
+
+#cliffs > img{
+    width:100%;
+    height: auto;
 }
 .main-header{
     background-color: rgb(38,41,61,0.7);
@@ -161,8 +178,15 @@ footer #nondisclaimer .social .fa-instagram{
 
 
 /*Activities*/
-table{
-    width:1000px;
+#activities main{
+    padding-top:300px
+}
+#activities main #activitytext{
+    width: 65%;
+    margin:4em auto 0 auto;
+}
+.table-responsive{
+    width: 1000px;
     margin:4em auto 0 auto;
 }
 caption{
@@ -208,9 +232,6 @@ td:first-child{
 /*-----selectable table grid-----*/
 #activities main #displaySelected {
     visibility: hidden;
-    margin: 0 auto;
-    width: 650px;
-    border:2px solid #9ed034;
     padding: 0.75em;
 }
 #activities main #displaySelected #result, #activities main #displaySelected #sendinfo {
@@ -233,7 +254,9 @@ td:first-child{
 
 /*Contact*/
 
-
+#contact main{
+    padding-top:300px
+}
 .contactinfo span:first-child{
     font-weight: bold;
 }
@@ -267,15 +290,19 @@ label{
     margin-top: 15px;
 }
 .radios label {
-    display: inline;
+    display: block;
 }
 .selectmenu{
     margin-top: 15px;
 }
 
 .selectmenu label{
-    display:inline;
+    display:block;
 }
+.selectmenu select{
+    margin-left: 25px;
+}
+
 input{
     margin-left: 25px; 
 }
@@ -353,6 +380,9 @@ select{
     top:54px;
 }
 */
+#cliffs main{
+    padding-top:300px
+}
 #cliffs main .cliffsinfo {
     
     width: 90%;
@@ -393,6 +423,7 @@ select{
     background:linear-gradient(0deg, rgba(251,215,139,1) 0%, rgba(118,213,245,1) 100%);
     height:40px;
     padding-top:10px;
+    margin-top: 180px;
 
 
 }
